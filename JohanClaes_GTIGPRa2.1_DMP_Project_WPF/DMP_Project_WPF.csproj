@@ -37,6 +37,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,17 +57,35 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Boekingsbureau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boekingsbureau.Designer.cs">
+      <DependentUpon>Boekingsbureau.cs</DependentUpon>
+    </Compile>
     <Compile Include="ComedianToevoegen.xaml.cs">
       <DependentUpon>ComedianToevoegen.xaml</DependentUpon>
     </Compile>
     <Compile Include="EventToevoegen.xaml.cs">
       <DependentUpon>EventToevoegen.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RaadpleegEvent.xaml.cs">
-      <DependentUpon>RaadpleegEvent.xaml</DependentUpon>
+    <Compile Include="Geboortedatum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Geboortedatum.Designer.cs">
+      <DependentUpon>Geboortedatum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsernamePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsernamePassword.Designer.cs">
+      <DependentUpon>UsernamePassword.cs</DependentUpon>
     </Compile>
     <Compile Include="ToonPlaylist.xaml.cs">
       <DependentUpon>ToonPlaylist.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZoekEvent.xaml.cs">
+      <DependentUpon>ZoekEvent.xaml</DependentUpon>
     </Compile>
     <Page Include="ComedianToevoegen.xaml">
       <SubType>Designer</SubType>
@@ -87,11 +107,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="RaadpleegEvent.xaml">
+    <Page Include="ToonPlaylist.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ToonPlaylist.xaml">
+    <Page Include="ZoekEvent.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -110,6 +130,15 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Boekingsbureau.resx">
+      <DependentUpon>Boekingsbureau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geboortedatum.resx">
+      <DependentUpon>Geboortedatum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsernamePassword.resx">
+      <DependentUpon>UsernamePassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -131,6 +160,9 @@
       <Project>{d0d692fd-bf50-48f1-af60-930f6bb5c719}</Project>
       <Name>DMP_Project_Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="comedy.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

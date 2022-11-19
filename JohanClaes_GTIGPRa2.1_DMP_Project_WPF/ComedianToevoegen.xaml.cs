@@ -23,5 +23,20 @@ namespace JohanClaes_GTIGPRa2._1_DMP_Project_WPF
         {
             InitializeComponent();
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void BTNVoegToe_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BTNVerwijder_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

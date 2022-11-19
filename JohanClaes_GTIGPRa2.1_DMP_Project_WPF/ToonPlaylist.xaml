@@ -5,19 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JohanClaes_GTIGPRa2._1_DMP_Project_WPF"
         mc:Ignorable="d"
-        Title="ToonPlaylist" Height="450" Width="800">
+        Title="ToonPlaylist" Height="450" Width="800" Background="#FFE8A39C">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
             <RowDefinition />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
-            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+        <TextBlock Text="Dit is de Playlist van " Grid.Row="0" Grid.Column="0" Margin="5" FontFamily="Segoe Script" FontSize="20"/>
+        <Label x:Name="lblComedianName" Grid.Row="0" Grid.Column="1"/>
+        <ListBox Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="10"/>
     </Grid>
 </Window>

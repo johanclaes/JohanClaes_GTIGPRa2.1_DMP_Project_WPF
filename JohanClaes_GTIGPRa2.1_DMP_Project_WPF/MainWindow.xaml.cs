@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DMP_Project_Form;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,32 @@ namespace JohanClaes_GTIGPRa2._1_DMP_Project_WPF
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void ZoekEvents_Click(object sender, RoutedEventArgs e)
+        {
+            ZoekEvent ZoekEventWindow = new ZoekEvent();
+            ZoekEventWindow.ShowDialog();
+        }
+
+        private void EventToevoegen_Click(object sender, RoutedEventArgs e)
+        {
+            var myForm = new usernamePassword();
+            myForm.Show();
+        }
+
+        private void ToonPlaylist_Click(object sender, RoutedEventArgs e)
+        {
+            var myForm = new Geboortedatum();
+            myForm.Show();
+        }
+
+        private void ComedianToevoegen_Click(object sender, RoutedEventArgs e)
+        {
+            // ComedianToevoegen ComedianToevoegenWindow = new ComedianToevoegen();
+            // ComedianToevoegenWindow.ShowDialog();
+            var myForm = new Boekingsbureau();
+            myForm.Show();
         }
     }
 }

@@ -5,19 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JohanClaes_GTIGPRa2._1_DMP_Project_WPF"
         mc:Ignorable="d"
-        Title="ComedianToevoegen" Height="450" Width="800">
+        Title="ComedianToevoegen" Height="450" Width="800" Background="#FFF0CE91">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="50"/>
-            <RowDefinition />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
+
+        <Button x:Name="btnVoegToe" Content="Voeg Comedian Toe" HorizontalAlignment="Left" Margin="572,33,0,0" VerticalAlignment="Top" Width="142" Click="BTNVoegToe_Click"/>
+        <Button x:Name="btnVerwijder" Content="Verwijder Comedian" HorizontalAlignment="Left" Margin="572,76,0,0" VerticalAlignment="Top" Width="142" Click="BTNVerwijder_Click"/>
+        <ListBox x:Name="lbComedians" HorizontalAlignment="Left" Height="129" Margin="284,260,0,0" VerticalAlignment="Top" Width="458"/>
+        <ComboBox x:Name="cmbComedians" HorizontalAlignment="Left" Height="50" Margin="523,126,0,0" VerticalAlignment="Top" Width="207"/>
+
+        <GroupBox Header="Nieuwe Comedian" Margin="26,20,401.6,218">
+            <StackPanel Margin="0,0,176.2,-13.6">
+                <TextBox x:Name="txtNaam" Text="Naam" Width="120" Margin="5"/>
+                <TextBox x:Name="txtVoornaam" Text="Voornaam" VerticalAlignment="Top" Width="120" Margin="5"/>
+                <TextBlock HorizontalAlignment="Left"  TextWrapping="Wrap" Text="GeboorteDatum" VerticalAlignment="Top" Width="120" Margin="5"/>
+                <DatePicker x:Name="calGeboortedatum"  VerticalAlignment="Top" Width="150" Margin="5"/>
+                <Button  x:Name="btnMaakComedianAan" Content="Maak comedian aan" Margin="5"/>
+            </StackPanel>
+        </GroupBox>
+        <TextBlock HorizontalAlignment="Left" Margin="398,231,0,0" TextWrapping="Wrap" Text="Comedians onder contract" VerticalAlignment="Top" FontSize="18"/>
+
+
     </Grid>
 </Window>

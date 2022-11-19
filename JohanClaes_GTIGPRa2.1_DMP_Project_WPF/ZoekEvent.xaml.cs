@@ -15,13 +15,18 @@ using System.Windows.Shapes;
 namespace JohanClaes_GTIGPRa2._1_DMP_Project_WPF
 {
     /// <summary>
-    /// Interaction logic for RaadpleegEvent.xaml
+    /// Interaction logic for ZoekEvent.xaml
     /// </summary>
-    public partial class RaadpleegEvent : Window
+    public partial class ZoekEvent : Window
     {
-        public RaadpleegEvent()
+        public ZoekEvent()
         {
             InitializeComponent();
+        }
+
+        private void BTNZoek_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
