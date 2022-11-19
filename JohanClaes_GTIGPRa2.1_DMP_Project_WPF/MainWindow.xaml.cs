@@ -46,8 +46,7 @@ namespace JohanClaes_GTIGPRa2._1_DMP_Project_WPF
 
         private void ComedianToevoegen_Click(object sender, RoutedEventArgs e)
         {
-            // ComedianToevoegen ComedianToevoegenWindow = new ComedianToevoegen();
-            // ComedianToevoegenWindow.ShowDialog();
+            
             var myForm = new Boekingsbureau();
             myForm.Show();
         }
