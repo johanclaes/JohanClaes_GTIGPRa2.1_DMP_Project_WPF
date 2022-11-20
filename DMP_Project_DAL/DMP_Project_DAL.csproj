@@ -42,6 +42,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -86,6 +87,7 @@
     <Compile Include="EventLocatie.cs">
       <DependentUpon>ComedyModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="IDatabaseConnectie.cs" />
     <Compile Include="Locatie.cs">
       <DependentUpon>ComedyModel.tt</DependentUpon>
     </Compile>
