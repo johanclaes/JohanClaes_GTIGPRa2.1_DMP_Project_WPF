@@ -60,15 +60,16 @@ namespace DMP_Project_Form
             this.txtUsername.TabIndex = 2;
             this.txtUsername.Text = "username";
             // 
-            // Form1
+            // usernamePassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.btnLogin);
-            this.Name = "Form1";
+            this.Name = "usernamePassword";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();

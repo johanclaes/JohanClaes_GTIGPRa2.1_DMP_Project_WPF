@@ -45,7 +45,7 @@ namespace JohanClaes_GTIGPRa2._1_DMP_Project_WPF
             // 
             this.btnLogin.Location = new System.Drawing.Point(155, 145);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(139, 23);
+            this.btnLogin.Size = new System.Drawing.Size(139, 44);
             this.btnLogin.TabIndex = 1;
             this.btnLogin.Text = "go-for-playlist";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -55,6 +55,7 @@ namespace JohanClaes_GTIGPRa2._1_DMP_Project_WPF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightCoral;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtGeboortedatum);
