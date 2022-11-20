@@ -42,6 +42,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -74,6 +75,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ComedyModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseConnectie.cs" />
     <Compile Include="DatumUur.cs">
       <DependentUpon>ComedyModel.tt</DependentUpon>
     </Compile>
@@ -86,6 +88,7 @@
     <Compile Include="EventLocatie.cs">
       <DependentUpon>ComedyModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="IDatabaseConnectie.cs" />
     <Compile Include="Locatie.cs">
       <DependentUpon>ComedyModel.tt</DependentUpon>
     </Compile>

@@ -16,7 +16,8 @@ namespace JohanClaes_GTIGPRa2._1_DMP_Project_WPF
 
         private void ZoekEvents_Click(object sender, RoutedEventArgs e)
         {
-            
+            ZoekEvent ZoekEventWindow = new ZoekEvent();
+            ZoekEventWindow.ShowDialog();
         }
 
         private void EventToevoegen_Click(object sender, RoutedEventArgs e)
