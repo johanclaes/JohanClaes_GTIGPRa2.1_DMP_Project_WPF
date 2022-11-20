@@ -31,8 +31,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.123\lib\net461\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,7 +53,45 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Boekingsburo.cs">
+      <DependentUpon>ComedyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Comedian.cs">
+      <DependentUpon>ComedyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ComedyModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComedyModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ComedyModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComedyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ComedyModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComedyModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DatumUur.cs">
+      <DependentUpon>ComedyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Event.cs">
+      <DependentUpon>ComedyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EventComedian.cs">
+      <DependentUpon>ComedyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EventLocatie.cs">
+      <DependentUpon>ComedyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Locatie.cs">
+      <DependentUpon>ComedyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LocatieContact.cs">
+      <DependentUpon>ComedyModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -49,6 +99,32 @@
       <Project>{d0d692fd-bf50-48f1-af60-930f6bb5c719}</Project>
       <Name>DMP_Project_Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="ComedyModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ComedyModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="App.Config" />
+    <None Include="ComedyModel.edmx.diagram">
+      <DependentUpon>ComedyModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ComedyModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ComedyModel.Context.cs</LastGenOutput>
+      <DependentUpon>ComedyModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="ComedyModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ComedyModel.edmx</DependentUpon>
+      <LastGenOutput>ComedyModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

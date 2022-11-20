@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace DMP_Project_Models
 {
-    public class Class1
+    public class EventLocatie2
     {
+        public int Id { get; set; }
+        public int eventId { get; set; }
+
+        public int locatieId { get; set; }
     }
 }

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d56685cef57b4d2290afb5b6df2cee89" Name="Diagram1">
+        <EntityTypeShape EntityType="ComedyModel.Boekingsburo" Width="1.5" PointX="9.875" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComedyModel.Comedian" Width="1.5" PointX="7.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComedyModel.DatumUur" Width="1.5" PointX="4.375" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComedyModel.Event" Width="1.5" PointX="1.25" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComedyModel.EventComedian" Width="1.5" PointX="5.125" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComedyModel.EventLocatie" Width="1.5" PointX="1.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComedyModel.Locatie" Width="1.5" PointX="4.375" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComedyModel.LocatieContact" Width="1.5" PointX="7.125" PointY="5.125" IsExpanded="true" />
+        <AssociationConnector Association="ComedyModel.FK_Comedian_Boekingsburo" ManuallyRouted="false" />
+        <AssociationConnector Association="ComedyModel.FK_EventComedian_Comedian" ManuallyRouted="false" />
+        <AssociationConnector Association="ComedyModel.FK_DatumUur_Event" ManuallyRouted="false" />
+        <AssociationConnector Association="ComedyModel.FK_EventComedian_Event" ManuallyRouted="false" />
+        <AssociationConnector Association="ComedyModel.FK_EventLocatie_Event" ManuallyRouted="false" />
+        <AssociationConnector Association="ComedyModel.FK_EventLocatie_Locatie" ManuallyRouted="false" />
+        <AssociationConnector Association="ComedyModel.FK_LocatieContact_Locatie" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
