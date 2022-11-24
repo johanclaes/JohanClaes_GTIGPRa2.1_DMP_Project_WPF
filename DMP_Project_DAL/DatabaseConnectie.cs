@@ -21,7 +21,7 @@ namespace DMP_Project_DAL
         {
             try
             {
-                Connectie = new SqlConnection("server=(localdb)\\mssqllocaldb,Database=Test;MultipleActiveResultSets=True");
+                Connectie = new SqlConnection("server=(localdb)\\mssqllocaldb;Database=Comedy;MultipleActiveResultSets=True;");
             }
             catch (Exception ex)
             {
@@ -34,13 +34,15 @@ namespace DMP_Project_DAL
 
         public void Open()
         {
-            if (true )
-            {
+            if (Connectie == null) Connecteren();
 
-            }
+            Connectie.Open();
         }
 
         public void Close()
-        { }
+        {
+            if (Connectie != null)
+                Connectie.Close();
+        }
     }
 }

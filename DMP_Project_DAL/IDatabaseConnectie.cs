@@ -10,7 +10,7 @@ namespace DMP_Project_DAL
     public interface IDatabaseConnectie
     {
         void Connecteren();
-        IDbConnection Connectie { get; set; };
+        IDbConnection Connectie { get; set; }
 
         void Open();
 

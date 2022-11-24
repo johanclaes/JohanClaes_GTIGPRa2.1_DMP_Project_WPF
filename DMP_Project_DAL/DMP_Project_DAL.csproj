@@ -76,6 +76,7 @@
       <DependentUpon>ComedyModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="DatabaseConnectie.cs" />
+    <Compile Include="DatabaseOperations.cs" />
     <Compile Include="DatumUur.cs">
       <DependentUpon>ComedyModel.tt</DependentUpon>
     </Compile>

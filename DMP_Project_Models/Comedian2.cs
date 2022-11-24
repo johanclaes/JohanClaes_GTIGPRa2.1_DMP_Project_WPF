@@ -13,5 +13,10 @@ namespace DMP_Project_Models
         public string voornaam { get; set; }
         public DateTime geboortedatum { get; set; }
         public int boekingsbureauId { get; set; }
+
+        public override string ToString()
+        {
+            return "blabla";
+        }
     }
 }

@@ -19,7 +19,7 @@ namespace JohanClaes_GTIGPRa2._1_DMP_Project_WPF
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtGeboortedatum.Text == "01/01/2000")
+            if (txtGeboortedatum.Text == "05/06/2001")
             {
                 this.Close();
                 ToonPlaylist ToonPlaylistWindow = new ToonPlaylist();
