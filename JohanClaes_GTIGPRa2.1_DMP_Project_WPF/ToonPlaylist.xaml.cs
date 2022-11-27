@@ -1,5 +1,10 @@
-﻿using System;
+﻿using Dapper;
+using DMP_Project_DAL;
+using DMP_Project_Models;
+using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +27,27 @@ namespace JohanClaes_GTIGPRa2._1_DMP_Project_WPF
         public ToonPlaylist()
         {
             InitializeComponent();
+        }
+
+        List<Comedian> lijstcomedians = new List<Comedian>();
+        
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            string sql = "SELECT * FROM Comedian";
+            sql += " ORDER BY naam";
+
+            // var parameters = new { @naam = naam };
+
+            lijstcomedians = DatabaseOperations.OphalenComedians();
+            
+            dataComedians.ItemsSource = lijstcomedians;
+
+            
+
+
+
+            
         }
     }
 }
